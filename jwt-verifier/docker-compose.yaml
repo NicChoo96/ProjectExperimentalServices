@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=jJJ^2NPF!HbbfkvQV
+      - MYSQL_DATABASE=jwt_db
+      - MYSQL_ROOT_PASSWORD=jJJ^2NPF!HbbfkvQV@
+    ports:
+      - 9906:3306
+    volumes:
+      - ./db:/var/lib/mysql
